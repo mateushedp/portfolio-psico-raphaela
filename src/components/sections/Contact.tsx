@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react";
+import { contactSchema } from "@/lib/schemas/contact";
 import SectionHeading from "../ui/SectionHeading";
 import ContactInfo from "../ui/ContactInfo";
 import FormField from "../ui/FormField";
@@ -10,9 +11,26 @@ export default function Contact() {
 	const [email, setEmail] = useState("");
 	const [name, setName] = useState("");
 	const [message, setMessage] = useState("");
+	const [errors, setErrors] = useState<Record<string, string>>({});
+	const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
 	const handleSubmit = () => {
 		console.log({ email, name, message })
+		const result = contactSchema.safeParse({ name, email, message });
+
+		if (!result.success) {
+			const fieldErrors = result.error.flatten().fieldErrors;
+			setErrors({
+				name: fieldErrors.name?.[0] ?? "",
+				email: fieldErrors.email?.[0] ?? "",
+				message: fieldErrors.message?.[0] ?? "",
+			});
+			return;
+		}
+
+		setErrors({});
+		setStatus("loading");
+		setStatus("success");
 	}
 
 	return (
@@ -49,13 +67,24 @@ export default function Contact() {
 
 				<div className="flex flex-col gap-5 rounded-3xl border border-green-brand/10 shadow-xl p-3 md:p-6">
 
-					<FormField label="E-mail" id="email" placeholder="exemplo@email.com" value={email} onChange={setEmail} />
-					<FormField label="Nome Completo" id="name" placeholder="Seu nome" value={name} onChange={setName} />
-					<FormField label="Mensagem" id="message" placeholder="Conte-me brevemente como posso ajudar..." multiline={true} value={message} onChange={setMessage} />
+					<FormField label="E-mail" id="email" placeholder="exemplo@email.com" value={email} onChange={setEmail} error={errors.email} />
+					<FormField label="Nome Completo" id="name" placeholder="Seu nome" value={name} onChange={setName} error={errors.name} />
+					<FormField label="Mensagem" id="message" placeholder="Conte-me brevemente como posso ajudar..." multiline={true} value={message} onChange={setMessage} error={errors.message} />
+
+					{status === "success" && (
+						<p className="text-sm text-green-brand">Mensagem enviada! Logo entrarei em contato com você.</p>
+					)}
+					{status === "error" && (
+						<p className="text-sm text-orange-cta">Algo deu errado. Tente novamente.</p>
+					)}
 
 					<button
-						className="w-full inline-flex items-center justify-center bg-orange-cta text-cream text-base md:text-lg rounded-2xl px-12 shadow-[0px_20px_25px_-5px_rgba(17,72,23,0.1),0px_8px_10px_-6px_rgba(17,72,23,0.1)] hover:opacity-90 transition-opacity py-4"
-						onClick={handleSubmit}>Enviar Solicitação</button>
+						className="w-full inline-flex items-center justify-center bg-orange-cta text-cream text-base cursor-pointer md:text-lg rounded-2xl px-12 shadow-[0px_20px_25px_-5px_rgba(17,72,23,0.1),0px_8px_10px_-6px_rgba(17,72,23,0.1)] hover:opacity-90 transition-opacity py-4 "
+						onClick={handleSubmit}
+						disabled={status === "loading"}
+					>
+						{status === "loading" ? "Enviando..." : "Enviar Solicitação"}
+					</button>
 				</div>
 			</div>
 		</section>
