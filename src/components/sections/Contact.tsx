@@ -14,8 +14,8 @@ export default function Contact() {
 	const [errors, setErrors] = useState<Record<string, string>>({});
 	const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-	const handleSubmit = () => {
-		console.log({ email, name, message })
+	const handleSubmit = async () => {
+
 		const result = contactSchema.safeParse({ name, email, message });
 
 		if (!result.success) {
@@ -30,7 +30,21 @@ export default function Contact() {
 
 		setErrors({});
 		setStatus("loading");
-		setStatus("success");
+
+		const res = await fetch("/api/contact", {
+			method: "POST",
+			headers: { "Content-Type": "application/json" },
+			body: JSON.stringify({ name, email, message }),
+		});
+
+		if (res.ok) {
+			setStatus("success");
+			setName("");
+			setEmail("");
+			setMessage("");
+		} else {
+			setStatus("error");
+		}
 	}
 
 	return (
