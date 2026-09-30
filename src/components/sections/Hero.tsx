@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
 	return (
-		<section id="home" className="bg-cream">
+		<section id="home" className="bg-cream scroll-mt-[var(--header-height)]">
 			<div
 				className="flex flex-col md:flex-row"
 				style={{ minHeight: "calc(100dvh - var(--header-height))" }}

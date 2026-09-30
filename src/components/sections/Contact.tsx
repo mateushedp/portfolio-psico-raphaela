@@ -48,10 +48,9 @@ export default function Contact() {
 	}
 
 	return (
-		<section id="contato" className="bg-cream">
+		<section id="contato" className="bg-cream scroll-mt-[var(--header-height)]">
 			<div
-				className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-32 px-6 md:px-12 py-11 md:py-32"
-				style={{ minHeight: "calc(100dvh - var(--header-height))" }}
+				className="w-full grid grid-cols-1 md:grid-cols-2 md:gap-32 px-6 md:px-12 py-11 md:py-5"
 			>
 				<div className="">
 					<SectionHeading eyebrow="Inicie sua Jornada" title="Vamos conversar?" />

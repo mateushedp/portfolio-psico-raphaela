@@ -6,10 +6,9 @@ export default function About() {
 	return (
 		<section id="sobre" className="bg-cream">
 			<div
-				className="flex flex-col md:flex-row"
-				style={{ minHeight: "calc(100dvh - var(--header-height))" }}
+				className="flex flex-col md:flex-row md:pt-16"
 			>
-				<div className="md:w-1/2 md:self-stretch order-2 md:order-1 shrink-0 px-6 md:px-12 py-6 md:py-12">
+				<div className="md:w-1/2 md:self-stretch order-2 md:order-1 shrink-0 px-6 md:px-12 py-6">
 					<div className="relative w-full h-[358px] md:h-full rounded-3xl overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
 						<Image
 							src="/profile-pic.jpg"

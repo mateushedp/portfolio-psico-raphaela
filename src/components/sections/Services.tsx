@@ -10,8 +10,8 @@ const cards = [
 
 export default function Services() {
 	return (
-		<section id="servicos" className="bg-cream">
-			<div className="flex flex-col md:flex-row gap-12 px-6 md:px-12 py-11 md:py-32">
+		<section id="servicos" className="bg-cream scroll-mt-[var(--header-height)]">
+			<div className="flex flex-col md:flex-row gap-12 px-6 md:px-12 py-11 md:py-5">
 				<div className="flex flex-col md:w-1/2 max-w-[576px]">
 					<SectionHeading eyebrow="Especialidades" title="Cuidado sob medida para você." />
 

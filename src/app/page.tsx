@@ -9,10 +9,12 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Contact />
+      <div className="flex flex-col gap-16">
+        <Hero />
+        <About />
+        <Services />
+        <Contact />
+      </div>
       <Footer />
     </main>
   );
