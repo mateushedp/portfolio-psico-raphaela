@@ -10,6 +10,30 @@
   --color-yellow-accent: #E2B808;
 
   --font-family-sans: var(--font-manrope), sans-serif;
+  --animate-slide-up: slide-up 800ms ease-out both;
+  --animate-slide-down: slide-down 800ms ease-out both;
+
+	@keyframes slide-up {
+		from {
+			opacity: 0;
+			transform: translateY(50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes slide-down {
+		from {
+			opacity: 0;
+			transform: translateY(-50px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
 }
 
 :root {
@@ -20,4 +44,11 @@
   :root {
     --header-height: 80px;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.animate-slide-up,
+	.animate-slide-down {
+		animation: none;
+	}
 }
