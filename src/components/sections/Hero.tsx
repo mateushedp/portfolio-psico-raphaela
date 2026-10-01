@@ -38,6 +38,7 @@ export default function Hero() {
 					<div className="relative w-full h-[358px] md:h-full rounded-3xl md:rounded-none overflow-hidden">
 						<Image
 							src="/hero-img.jpg"
+							sizes="(max-width: 768px) 100vw, 50vw"
 							alt="Imagem de jardim com cerca branca"
 							fill
 							className="object-cover"

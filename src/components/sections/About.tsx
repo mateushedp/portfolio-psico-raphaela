@@ -12,6 +12,7 @@ export default function About() {
 					<div className="relative w-full h-[358px] md:h-full rounded-3xl overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)]">
 						<Image
 							src="/profile-pic.jpg"
+							sizes="(max-width: 768px) 100vw, 50vw"
 							alt="Foto de Teodora Foss"
 							fill
 							className="object-cover object-[center_15%]"

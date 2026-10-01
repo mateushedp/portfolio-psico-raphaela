@@ -1,5 +1,4 @@
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import Image from "next/image";
 
 export default function Footer() {
 	return (
@@ -7,12 +6,7 @@ export default function Footer() {
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div>
 					<div className="flex gap-2">
-						<Image
-							src="/leaf-logo.svg"
-							alt="Logo Teodora Foss"
-							width={21}
-							height={30}
-						/>
+						<img src="/leaf-logo.svg" alt="Logo Teodora Foss" width={21} />
 						<span className="text-xl md:text-2xl text-green-brand tracking-[-1.2px]">
 							Teodora Foss
 						</span>

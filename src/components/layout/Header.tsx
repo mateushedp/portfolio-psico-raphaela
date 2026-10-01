@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 
 const links = [
 	{ label: "Home", href: "#home" },
@@ -42,7 +41,7 @@ export default function Header() {
 		<header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-sm border-b border-green-brand/10">
 			<div className="px-4 md:px-12 h-[70px] md:h-[80px] flex items-center justify-between">
 				<a href="#home" className="flex items-end gap-2">
-					<Image src="/leaf-logo.svg" alt="Logo Teodora Foss" width={21} height={30} />
+					<img src="/leaf-logo.svg" alt="Logo Teodora Foss" width={21} />
 					<span className="text-xl md:text-2xl text-green-brand tracking-[-1.2px]">
 						Teodora Foss
 					</span>
