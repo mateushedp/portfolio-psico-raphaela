@@ -15,22 +15,15 @@ export default function Services() {
 				<div className="flex flex-col md:w-1/2 max-w-[576px]">
 					<SectionHeading eyebrow="Especialidades" title="Cuidado sob medida para você." />
 
-					<p className="text-base text-justify md:text-xl text-green-brand">
-						Acredito que cada indivíduo possui uma história única que merece ser
-						ouvida com empatia e técnica. Minha abordagem integra o rigor
-						científico com a sensibilidade necessária para tratar questões
-						profundas da mente humana.
-					</p>
+					<p className="text-base text-justify md:text-xl md:mt-8 text-green-brand">
+						&nbsp;&nbsp;&nbsp;&nbsp;Cada pessoa chega à terapia com uma história, necessidades e questões próprias. Por isso, o acompanhamento é construído de forma individualizada, considerando o momento de vida e as particularidades de cada pessoa.
 
-					<div className="pt-4">
-						<a
-							href="#"
-							className="inline-flex items-center gap-2 text-sm text-green-brand border-b-2 border-green-brand pb-1 hover:opacity-70 transition-opacity"
-						>
-							Saiba mais sobre minha trajetória
-							<ArrowRight size={15} />
-						</a>
-					</div>
+					</p>
+					<p className="text-base text-justify md:text-xl md:mt-8 text-green-brand">
+						&nbsp;&nbsp;&nbsp;&nbsp;						O objetivo é oferecer um espaço de escuta e acolhimento onde diferentes questões possam ser compreendidas e elaboradas com cuidado, respeitando o tempo e o processo de cada paciente.
+
+
+					</p>
 				</div>
 
 				<div className="grid grid-cols-2 gap-4 md:ml-8 md:w-1/2">

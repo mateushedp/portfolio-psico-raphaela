@@ -48,7 +48,7 @@ export default function Footer() {
 			<hr className="border-green-brand/10 my-8"></hr>
 
 			<p className="text-green-brand/60 text-xs text-center">
-				2026 © Raphaela Andrades. Todos os direitos reservados. CRP 07/45575.
+				2026 © Raphaela Andrades. Todos os direitos reservados. CRP 99/48217.
 			</p>
 
 		</footer>

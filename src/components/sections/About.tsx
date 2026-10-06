@@ -52,31 +52,25 @@ export default function About() {
 				</div>
 
 				<div
-					className={`flex flex-col justify-center gap-3 w-full md:w-1/2 md:pl-12 px-6 pt-11 pb-6 md:px-12 md:py-24 order-1 md:order-2 ${isVisible ? "animate-slide-down" : "opacity-0"
+					className={`flex flex-col justify-center gap-3 w-full md:w-1/2 md:pl-12 px-6 pt-11 pb-6 md:px-12 md:py-12 order-1 md:order-2 ${isVisible ? "animate-slide-down" : "opacity-0"
 						}`}
 				>
 					<SectionHeading eyebrow="Sobre Mim" title="Raphaela Andrades" />
 
 					<p className="text-lg md:text-xl tracking-tight text-green-brand pb-6">
-						CRP 07/45575
+						CRP 99/48217
 					</p>
 
 					<p className="text-base md:text-xl text-justify text-green-brand">
-						Acredito que cada indivíduo possui uma história única que merece ser
-						ouvida com empatia e técnica. Minha abordagem integra o rigor
-						científico com a sensibilidade necessária para tratar questões
-						profundas da mente humana.
+						&nbsp;&nbsp;&nbsp;&nbsp;Sou psicóloga e atuo como Psicanalista Clínica, oferecendo um espaço de escuta acolhedora e livre de julgamentos para que cada pessoa possa falar sobre sua história, seus sentimentos e as questões que atravessam sua vida.
+
+						A partir da perspectiva psicanalítica, busco compreender aquilo que se manifesta para além do que é imediatamente consciente, respeitando a singularidade de cada sujeito e o seu próprio tempo.
+
 					</p>
 
-					<div className="pt-4">
-						<a
-							href="#"
-							className="inline-flex items-center gap-2 text-sm text-green-brand border-b-2 border-green-brand pb-1 hover:opacity-70 transition-opacity"
-						>
-							Saiba mais sobre minha trajetória
-							<ArrowRight size={15} />
-						</a>
-					</div>
+					<p className="text-base md:text-xl text-justify text-green-brand">
+						&nbsp;&nbsp;&nbsp;&nbsp;Meu compromisso é acompanhar você nesse processo de autoconhecimento, escuta e construção de novos sentidos para a própria história.
+					</p>
 				</div>
 			</div>
 		</section>
