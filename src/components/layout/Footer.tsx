@@ -6,7 +6,7 @@ export default function Footer() {
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div>
 					<div className="flex gap-2">
-						<img src="/leaf-logo2.svg" alt="Logo Raphaela Andrades" width={30} />
+						<img src="/leaf-logo.svg" alt="Logo Raphaela Andrades" width={30} />
 						<span className="text-xl md:text-2xl text-green-brand tracking-[-1.2px]">
 							Raphaela Andrades
 						</span>
