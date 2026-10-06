@@ -13,7 +13,7 @@ export default function Hero() {
 							Cuidado Mental
 						</span>
 
-						<h1 className="text-3xl text-center md:text-[60px] md:leading-[60px] tracking-[-1.5px] text-green-brand font-normal animate-slide-down [animation-delay:0ms]">
+						<h1 className="text-3xl md:text-[60px] md:leading-[60px] tracking-[-1.5px] text-green-brand font-normal animate-slide-down [animation-delay:0ms]">
 							Sua jornada para o equilíbrio emocional começa aqui.
 						</h1>
 

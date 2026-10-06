@@ -9,7 +9,8 @@
   --color-text-muted: #6B7280;
   --color-yellow-accent: #E2B808;
 
-  --font-family-sans: var(--font-manrope), sans-serif;
+  --font-sans: var(--font-manrope), sans-serif;
+  --font-helvetica: var(--font-helvetica), sans-serif;
   --animate-slide-up: slide-up 800ms ease-out both;
   --animate-slide-down: slide-down 800ms ease-out both;
 
@@ -36,6 +37,12 @@
 	}
 }
 
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-helvetica);
+  }
+}
+
 :root {
   --header-height: 70px;
 }
@@ -44,11 +51,4 @@
   :root {
     --header-height: 80px;
   }
-}
-
-@media (prefers-reduced-motion: reduce) {
-	.animate-slide-up,
-	.animate-slide-down {
-		animation: none;
-	}
 }
