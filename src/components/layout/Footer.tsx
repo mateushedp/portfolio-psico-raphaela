@@ -6,9 +6,9 @@ export default function Footer() {
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div>
 					<div className="flex gap-2">
-						<img src="/leaf-logo.svg" alt="Logo Teodora Foss" width={21} />
+						<img src="/leaf-logo.svg" alt="Logo Raphaela Andrades" width={21} />
 						<span className="text-xl md:text-2xl text-green-brand tracking-[-1.2px]">
-							Teodora Foss
+							Raphaela Andrades
 						</span>
 					</div>
 					<p className="text-xs text-green-brand mt-2 mb-6">
@@ -23,7 +23,7 @@ export default function Footer() {
 					<div className="flex gap-4 mt-4">
 						<div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-cream shrink-0 shadow-sm">
 							<a
-								href="https://instagram.com/teodora"
+								href="https://instagram.com/rafaela"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="flex items-center justify-center w-12 h-12 rounded-2xl bg-cream border border-green-brand/10 shrink-0 hover:opacity-70 transition-opacity"
@@ -33,7 +33,7 @@ export default function Footer() {
 						</div>
 						<div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-cream shrink-0 shadow-sm">
 							<a
-								href="https://instagram.com/teodora"
+								href="https://instagram.com/rafaela"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="flex items-center justify-center w-12 h-12 rounded-2xl bg-cream border border-green-brand/10 shrink-0 hover:opacity-70 transition-opacity"
@@ -48,7 +48,7 @@ export default function Footer() {
 			<hr className="border-green-brand/10 my-8"></hr>
 
 			<p className="text-green-brand/60 text-xs text-center">
-				2026 © Teodora Foss. Todos os direitos reservados. CRP 07/45575.
+				2026 © Raphaela Andrades. Todos os direitos reservados. CRP 07/45575.
 			</p>
 
 		</footer>

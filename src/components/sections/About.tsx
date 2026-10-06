@@ -37,14 +37,14 @@ export default function About() {
 				<div className="md:w-1/2 md:self-stretch order-2 md:order-1 shrink-0 px-6 md:px-12 py-6">
 					<div
 						className={`relative w-full h-[358px] md:h-full rounded-3xl overflow-hidden shadow-[0px_25px_50px_-12px_rgba(0,0,0,0.25)] ${isVisible
-								? "animate-slide-up [animation-delay:200ms]"
-								: "opacity-0"
+							? "animate-slide-up [animation-delay:200ms]"
+							: "opacity-0"
 							}`}
 					>
 						<Image
 							src="/profile-pic.jpg"
 							sizes="(max-width: 768px) 100vw, 50vw"
-							alt="Foto de Teodora Foss"
+							alt="Foto de Raphaela Andrades"
 							fill
 							className="object-cover object-[center_15%]"
 						/>
@@ -55,7 +55,7 @@ export default function About() {
 					className={`flex flex-col justify-center gap-3 w-full md:w-1/2 md:pl-12 px-6 pt-11 pb-6 md:px-12 md:py-24 order-1 md:order-2 ${isVisible ? "animate-slide-down" : "opacity-0"
 						}`}
 				>
-					<SectionHeading eyebrow="Sobre Mim" title="Teodora Foss" />
+					<SectionHeading eyebrow="Sobre Mim" title="Raphaela Andrades" />
 
 					<p className="text-lg md:text-xl tracking-tight text-green-brand pb-6">
 						CRP 07/45575

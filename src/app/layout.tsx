@@ -37,7 +37,7 @@ const helvetica = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Teodora Foss | Psicóloga",
+  title: "Raphaela Andrades | Psicóloga",
   description:
     "Um espaço seguro e acolhedor para redescobrir sua força interior e cultivar uma vida com mais clareza e propósito.",
 };
