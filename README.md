@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Raphaela Andrades — Landing Page
 
-## Getting Started
+Landing page profissional desenvolvida para a psicóloga Raphaela Andrades, com foco em clareza visual, acessibilidade e experiência do usuário.
 
-First, run the development server:
+## Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15** (App Router) — SSG, roteamento e otimização de imagens
+- **Tailwind CSS v4** — estilização com design tokens customizados
+- **TypeScript** — tipagem estática
+- **Zod** — validação do formulário de contato
+- **Resend** — envio de e-mails a partir do formulário
+
+## Funcionalidades
+
+- Design responsivo (mobile e desktop)
+- Navegação com detecção de seção ativa via IntersectionObserver
+- Formulário de contato com validação e envio de e-mail
+- Fontes otimizadas via `next/font` (Manrope + Headland One)
+
+## Estrutura
+
+```
+src/
+├── app/
+│   ├── api/contact/      # Route handler para envio de e-mail
+│   ├── layout.tsx        # Metadata, fontes globais
+│   └── page.tsx          # Composição das sections
+├── components/
+│   ├── layout/           # Header, Footer
+│   ├── sections/         # Hero, About, Services, Contact
+│   └── ui/               # Componentes reutilizáveis (FormField, ContactInfo, SectionHeading...)
+└── lib/
+    └── schemas/          # Schema de validação Zod
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variáveis de ambiente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Cria um `.env.local` na raiz do projeto:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+RESEND_API_KEY=sua_chave_aqui
+TEST_MAIL=seu_email_aqui
+```
 
-## Learn More
+## Rodando localmente
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Acesse http://localhost:3000.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O projeto está configurado para deploy na [Vercel](https://vercel.com/). Basta conectar o repositório e adicionar as variáveis de ambiente nas configurações do projeto.
