@@ -1,5 +1,7 @@
 # Raphaela Andrades — Landing Page
 
+**🔗 [Ver projeto ao vivo](https://portfolio-psico-raphaela.vercel.app/)**
+
 Landing page profissional desenvolvida para a psicóloga Raphaela Andrades, com foco em clareza visual, acessibilidade e experiência do usuário.
 
 ## Stack
